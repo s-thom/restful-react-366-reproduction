@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate": "restful-react import --file ./openapi.yaml --output ./out.ts --skip-react"
   },
   "author": "Stuart Thomson",
   "license": "MIT",

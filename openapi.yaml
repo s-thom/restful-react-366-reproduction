@@ -1,0 +1,54 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Bug reproduction
+  description: Bug reproduction
+servers: []
+paths:
+  '/{first}/{second}':
+    get:
+      operationId: getFirstSecond
+      summary: Get the second first
+      parameters:
+        - name: first
+          description: The first parameter
+          required: true
+          in: path
+          schema:
+            type: string
+        - name: second
+          description: The second parameter
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+    delete:
+      operationId: deleteFirstSecond
+      summary: Delete the second first
+      parameters:
+        - name: first
+          description: The first parameter
+          required: true
+          in: path
+          schema:
+            type: string
+        - name: second
+          description: The second parameter
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
